@@ -1,7 +1,6 @@
+import { SubscriptionForm } from '@/app/(home)/subscription-form'
 import logo from '@/assets/logo.svg'
-import { Button } from '@/components/button'
-import { InputField, InputIcon, InputRoot } from '@/components/input'
-import { ArrowRight, Mail, Radio, User } from 'lucide-react'
+import { Radio } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Home() {
@@ -34,32 +33,8 @@ export default function Home() {
           <br />
           Dias 15 a 17 de março | Das 18h às 21h | Online & Gratuito
         </div>
-        <form
-          className="bg-gray-700 border border-gray-600 rounded-2xl p-8 space-y-6 w-full md:max-w-[440px]"
-          action=""
-        >
-          <h2 className="font-heading font-semibold text-gray-200 text-xl">Inscrição</h2>
 
-          <div className="space-y-3">
-            <InputRoot>
-              <InputIcon>
-                <User />
-              </InputIcon>
-              <InputField type="text" placeholder="Nome completo" />
-            </InputRoot>
-
-            <InputRoot>
-              <InputIcon>
-                <Mail />
-              </InputIcon>
-              <InputField type="mail" placeholder="E-mail" />
-            </InputRoot>
-          </div>
-          <Button type="submit">
-            Confirmar
-            <ArrowRight />
-          </Button>
-        </form>
+        <SubscriptionForm />
       </div>
     </div>
   )
