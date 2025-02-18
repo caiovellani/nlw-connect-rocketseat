@@ -1,9 +1,8 @@
-import { Ranking } from '@/app/invite/ranking'
-
-import { InviteLinkInput } from '@/app/invite/invite-link-input'
-import { Stats } from '@/app/invite/stats'
 import logo from '@/assets/logo.svg'
 import Image from 'next/image'
+import { InviteLinkInput } from './invite-link-input'
+import { Ranking } from './ranking'
+import { Stats } from './stats'
 
 export default function InvitePage() {
   return (
